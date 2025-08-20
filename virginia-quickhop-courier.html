@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virginia QuickHop Courier</title>
+<meta name="description" content="Fast, friendly courier service across Virginia. Call or text for a quote.">
+<style>
+  :root{
+    --bg:#0b0c10;
+    --card:#121418;
+    --accent:#BD2025;
+    --text:#f7f7f7;
+    --muted:#bdbdbd;
+    --ok:#2ecc71;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji;
+    color:var(--text);
+    background: radial-gradient(1200px 800px at 80% -10%, #1c1f28 0%, var(--bg) 45%);
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:720px;margin:0 auto;padding:16px}
+  .card{
+    background:linear-gradient(180deg, #1a1d25 0%, var(--card) 100%);
+    border:1px solid #1f232d;
+    border-radius:24px;
+    padding:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+  }
+  header{
+    display:flex;gap:14px;align-items:center;justify-content:space-between
+  }
+  .brand{display:flex;gap:12px;align-items:center}
+  .logo{width:44px;height:44px;border-radius:12px;background:#1f232d;display:grid;place-items:center;border:1px solid #2a2f3a}
+  .logo svg{width:30px;height:30px;display:block}
+  .brand h1{font-size:1.15rem;margin:0;line-height:1.1}
+  .tag{font-size:.8rem;color:var(--muted)}
+  .avatar{width:44px;height:44px;border-radius:50%;overflow:hidden;border:2px solid #2a2f3a}
+  .hero{
+    margin:14px 0 4px 0;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+  .cta{
+    display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px
+  }
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    padding:14px 16px;border-radius:14px;border:1px solid #2a2f3a;font-weight:700;
+    background:#1c212c
+  }
+  .btn.primary{background:var(--accent);border-color:#a3171b}
+  .btn.whatsapp{background:#1c212c}
+  .tiny{font-size:.8rem;color:var(--muted)}
+  .grid{display:grid;gap:12px}
+  .pill{display:inline-block;padding:6px 10px;border:1px solid #2a2f3a;border-radius:999px;color:var(--muted);font-size:.85rem}
+  .list{display:grid;gap:8px;margin:6px 0 0 0;padding:0;list-style:none}
+  .list li{display:flex;gap:8px;align-items:flex-start}
+  .list svg{flex:0 0 18px;margin-top:2px}
+  .prices{display:grid;gap:10px;margin-top:8px}
+  .price{
+    border:1px dashed #3a3f4a;border-radius:16px;padding:12px 14px;background:#151820
+  }
+  .price strong{font-size:1.1rem}
+  .muted{color:var(--muted)}
+  .locations{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .footer{margin-top:12px;color:#9aa3ad;font-size:.8rem;text-align:center}
+  .divider{height:1px;background:linear-gradient(90deg,transparent, #2a2f3a, transparent);margin:16px 0}
+  @media(min-width:560px){
+    .hero{grid-template-columns:1.1fr .9fr}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div class="brand">
+          <div class="logo" aria-hidden="true">
+            <!-- Simple envelope + VA shape mark -->
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Virginia QuickHop">
+              <rect x="9" y="14" width="46" height="30" rx="4" stroke="white" opacity=".9"/>
+              <path d="M11 16l21 15 21-15" stroke="white" opacity=".9"/>
+              <!-- tiny VA bump -->
+              <path d="M38 44c7-5 9-8 14-9 2-.2 5 1 5 3 0 3-3 5-7 5H38z" fill="white" opacity=".9"/>
+            </svg>
+          </div>
+          <div>
+            <h1>Virginia QuickHop Courier</h1>
+            <div class="tag">Fast. Friendly. “Reasonable.”</div>
+          </div>
+        </div>
+        <img class="avatar" src="https://i.ibb.co/21ZJgNT/pic.jpg" alt="Courier owner photo">
+      </header>
+
+      <section class="hero">
+        <div>
+          <h2 style="margin:.2rem 0 0 0">On‑Demand Courier, Anywhere in VA</h2>
+          <p class="muted" style="margin:6px 0 0 0">Documents, packages, last‑minute “save my day” runs. Real human, real fast.</p>
+          <div class="cta">
+            <a class="btn primary" href="tel:+18045550123">📞 Call Now</a>
+            <a class="btn" href="sms:+18045550123?body=Hi%20QuickHop%2C%20I%20need%20a%20courier%20quote.">✉️ Text for Quote</a>
+          </div>
+          <p class="tiny">Available today • 7am–10pm • Same‑day / Rush / Scheduled</p>
+        </div>
+        <div class="grid">
+          <div class="pill">Licensed • Insured • Photo updates</div>
+          <ul class="list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 7L9 18l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Same‑day in Richmond, Charlottesville, Williamsburg, Gloucester, NoVA &amp; more
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 7L9 18l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Live GPS sharing on request
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 7L9 18l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Friendly “treat-it-like-it’s-mine” handling
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h3 style="margin:0 0 6px 0">Super “Reasonable” Pricing*</h3>
+        <p class="muted" style="margin:0 0 10px 0">We pride ourselves on fair rates… that you’ll definitely tell your friends about.</p>
+        <div class="prices">
+          <div class="price"><strong>📄 Envelope Across Town</strong><br><span class="muted">Under 10 miles • 2–4 hours</span><br><span style="font-size:1.35rem;font-weight:800">$499</span></div>
+          <div class="price"><strong>📦 Same‑Day Package</strong><br><span class="muted">Up to 10 lb • 25 miles</span><br><span style="font-size:1.35rem;font-weight:800">$1,299</span></div>
+          <div class="price"><strong>⚡ Rush Stat!</strong><br><span class="muted">Right now • Skip the line</span><br><span style="font-size:1.35rem;font-weight:800">$2,999</span></div>
+          <div class="price"><strong>🚀 Statewide Blast</strong><br><span class="muted">Anywhere in Virginia today</span><br><span style="font-size:1.35rem;font-weight:800">$7,999</span></div>
+        </div>
+        <p class="tiny">*By “reasonable,” we mean the prices are printed using a reasonably sized font.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:book@quickhopva.example?subject=Courier%20Request&body=Hi%20QuickHop%2C%20I%27d%20like%20to%20book%20a%20delivery.">📧 Email a Request</a>
+          <a class="btn" href="#contact">📍 Coverage Map</a>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="contact">
+        <h3 style="margin:0 0 6px 0">Where We Go</h3>
+        <div class="locations">
+          <span class="pill">Richmond</span>
+          <span class="pill">Charlottesville</span>
+          <span class="pill">Williamsburg</span>
+          <span class="pill">Gloucester</span>
+          <span class="pill">Hampton Roads</span>
+          <span class="pill">Fredericksburg</span>
+          <span class="pill">NoVA</span>
+          <span class="pill">Roanoke</span>
+        </div>
+        <p class="muted" style="margin:10px 0 0 0">Got a weird request? We love weird. Try us.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h3 style="margin:0 0 6px 0">Book in 10 Seconds</h3>
+        <form class="grid" action="https://formsubmit.co/your@email.com" method="POST">
+          <input type="hidden" name="_subject" value="New QuickHop Courier Request">
+          <input type="text" name="name" placeholder="Your name" required style="padding:14px;border-radius:12px;border:1px solid #2a2f3a;background:#0f1218;color:var(--text)">
+          <input type="tel" name="phone" placeholder="Phone number" required style="padding:14px;border-radius:12px;border:1px solid #2a2f3a;background:#0f1218;color:var(--text)">
+          <textarea name="details" rows="4" placeholder="Pickup & dropoff + package details" required style="padding:14px;border-radius:12px;border:1px solid #2a2f3a;background:#0f1218;color:var(--text)"></textarea>
+          <button class="btn primary" type="submit">🚚 Request Pickup</button>
+          <p class="tiny">Or just call/text and skip the form.</p>
+        </form>
+      </section>
+
+      <div class="divider"></div>
+
+      <footer class="footer">
+        <div>© <span id="y"></span> Virginia QuickHop Courier • Virginia, USA</div>
+        <div style="margin-top:6px">This site is a quick shareable landing page. Replace the phone & email before sending.</div>
+      </footer>
+    </div>
+  </div>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
